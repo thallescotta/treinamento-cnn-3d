@@ -1,4 +1,4 @@
-# 🔧 Treinamento de Modelos CNN 3D
+# 🤖 Treinamento de Modelos CNN 3D
 
 Este repositório contém scripts e análises detalhadas para o treinamento de Redes Neurais Convolucionais (CNN), explorando diferentes hiperparâmetros como taxa de aprendizado e tamanho de batch. O objetivo é estudar o impacto dessas variações no desempenho do modelo.
 
