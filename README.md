@@ -15,33 +15,18 @@ Este projeto implementa e avalia um modelo de Rede Neural Convolucional 3D (CNN 
 
 ## 🌐 Estrutura do Repositório
 
-- `doze.ipynb`: Notebook principal com as etapas do treinamento e análise.
-- `liberar_memoria.py`: Script auxiliar para liberar memória durante execuções prolongadas.
-- `requirements.txt`: Lista de bibliotecas necessárias.
-- `test_gpu.py`: Verifica se o sistema suporta execução em GPU.
-- `modelos/`: Contém os modelos treinados salvos no formato `.pth`.
+1. [**app-boa-avaliacao-190125.ipynb**](https://github.com/thallescotta/treinamento-cnn-3d/blob/main/app-boa-avaliacao-190125.ipynb)
+   - Primeiro modelo criado do início ao fim baseado no DenseNet121.
 
-## ⚙️ Etapas do Projeto
+2. [**doze.ipynb**](https://github.com/thallescotta/treinamento-cnn-3d/blob/main/doze.ipynb)
+   - Entendendo sobre Épocas.
 
-### Configuração Inicial (#1 a #5)
-1. **Carregamento e Normalização do Dataset**
-   - O dataset `OAI-MRI-3DDESS` é carregado e normalizado para ser utilizado como entrada para o modelo.
+3. [**2benchmark-modelos-cnn-3d.ipynb**](https://github.com/thallescotta/treinamento-cnn-3d/blob/main/2benchmark-modelos-cnn-3d.ipynb)
+   - Benchmark dos modelos DenseNet121, ResNet50, EfficientNet-B0, MobileNetV2 e VGG16.
 
-2. **Divisão do Dataset**
-   - Os dados são divididos em subconjuntos para treinamento, validação e teste.
+4. [**Simplified-UNet.ipynb**](https://github.com/thallescotta/treinamento-cnn-3d/blob/main/Simplified-UNet.ipynb)
+   - Modelo UNet usado com alguns prints iniciais.
 
-3. **Definição do Modelo**
-   - O modelo CNN 3D é definido com base no PyTorch, usando duas camadas convolucionais seguidas de pooling e camadas totalmente conectadas.
-
-### Treinamento e Avaliação (#6 a #14)
-1. **Treinamento do Modelo**
-   - O modelo é treinado usando várias combinações de taxa de aprendizado (LR) e tamanho de batch, explorando os melhores parâmetros.
-
-2. **Avaliação**
-   - O modelo é avaliado em um conjunto de teste, com métricas como acurácia, precisão, recall e F1-Score.
-
-3. **Ajuste de Hiperparâmetros**
-   - Técnicas como Grid Search são utilizadas para encontrar a melhor configuração.
 
 ## 🔼 Dataset Utilizado
 
